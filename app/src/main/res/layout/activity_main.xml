@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="181dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="1"
+        android:text="@string/d_lai_entre_chaque_accord"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/delayGroup"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/sharpSwitch"
+        android:layout_width="259dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/inclus_accords_b_mol_et_di_se"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delayGroup"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/frenchNotationSwitch"
+        android:layout_width="259dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="116dp"
+        android:text="@string/utiliser_la_notation_fran_aise"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delayGroup"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/minorSwitch"
+        android:layout_width="259dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/inclus_accords_mineur"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delayGroup"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <RadioGroup
+        android:id="@+id/delayGroup"
+        android:layout_width="408dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="404dp"
+        android:checkedButton="@id/fiveSeconds"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/fiveSeconds"
+            android:layout_width="137dp"
+            android:layout_height="50dp"
+            android:text="5s"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="405dp"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/tenSeconds"
+            android:layout_width="137dp"
+            android:layout_height="50dp"
+            android:text="10s"
+            tools:layout_editor_absoluteX="137dp"
+            tools:layout_editor_absoluteY="405dp"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/fifteenSeconds"
+            android:layout_width="137dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="15s"
+            tools:layout_editor_absoluteX="274dp"
+            tools:layout_editor_absoluteY="405dp"
+            tools:ignore="HardcodedText" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/commencer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/reset"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chordView"
+        android:layout_width="196dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="138dp"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timerView"
+        android:layout_width="88dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

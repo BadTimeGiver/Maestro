@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Maestro</string>
+    <string name="d_lai_entre_chaque_accord">Délai entre chaque accord</string>
+    <string name="inclus_accords_b_mol_et_di_se">Inclus accords bémol et dièse</string>
+    <string name="utiliser_la_notation_fran_aise">Utiliser la notation française</string>
+    <string name="inclus_accords_mineur">Inclus accords mineur</string>
+    <string name="commencer">Commencer</string>
+    <string name="reset">Reset</string>
 </resources>
